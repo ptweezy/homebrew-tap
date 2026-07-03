@@ -1,7 +1,7 @@
 class Yacron2 < Formula
   desc "Modern, distributed, container-friendly cron replacement"
   homepage "https://github.com/ptweezy/yacron2"
-  version "1.2.2"
+  version "1.2.3"
   license "MIT"
 
   # Serve the signed + notarized (macOS) self-contained release binaries, so
@@ -10,21 +10,21 @@ class Yacron2 < Formula
   # edit the template there, not this copy.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/yacron2/releases/download/1.2.2/yacron2-macos-arm64"
-      sha256 "0ffa4ddc81d14abc6b292874af666cb8e71874ea28936dcac8f28ff39dc21555"
+      url "https://github.com/ptweezy/yacron2/releases/download/1.2.3/yacron2-macos-arm64"
+      sha256 "65d2a51e15b98c157889b068d54db9977d6af35568d633bf557d1baa214c435c"
     else
-      url "https://github.com/ptweezy/yacron2/releases/download/1.2.2/yacron2-macos-amd64"
-      sha256 "7e4f6c122d7ef2063dfd9340eb6af838781d79da7cbb8d66dbae7fa9c84bcae5"
+      url "https://github.com/ptweezy/yacron2/releases/download/1.2.3/yacron2-macos-amd64"
+      sha256 "afcde33a5eb57614109b410894537dd9c79496b3af4902fe92f5e1866d14f7c6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/yacron2/releases/download/1.2.2/yacron2-linux-arm64"
-      sha256 "96a114e6e00030dadcc749196f5140f13a9e8a6095c6b0da8f590a8a1efa2113"
+      url "https://github.com/ptweezy/yacron2/releases/download/1.2.3/yacron2-linux-arm64"
+      sha256 "e41563c78e21ce137070f181b6d996510bd7109c2d26b976d8945c55e8e65d0e"
     else
-      url "https://github.com/ptweezy/yacron2/releases/download/1.2.2/yacron2-linux-amd64"
-      sha256 "2d65feb5e7dab0b07a73a6dcb1146cff563d8c751b9bf827778ae2e539e1b295"
+      url "https://github.com/ptweezy/yacron2/releases/download/1.2.3/yacron2-linux-amd64"
+      sha256 "aa4454cbed6eedda806fbd2eaf2f09de3c18f02728a3cde95f0e13d0f3d0ba7c"
     end
   end
 
