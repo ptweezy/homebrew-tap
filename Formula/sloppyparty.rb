@@ -1,7 +1,7 @@
 class Sloppyparty < Formula
   desc "Portable file server with resumable uploads, media indexer, and WebDAV"
   homepage "https://github.com/ptweezy/sloppyparty"
-  version "1.0.21"
+  version "1.0.22"
   license "MIT"
 
   # Serve the self-contained PyInstaller release binaries, so there is no Python
@@ -10,21 +10,21 @@ class Sloppyparty < Formula
   # template there, not this generated copy.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.21/sloppyparty-macos-arm64"
-      sha256 "a4adb0e665a7345a49dcf2267b6c34f08c604d35b791ca21013d4b8d0cfd5efc"
+      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.22/sloppyparty-macos-arm64"
+      sha256 "147824f7d1b620362839635050d7e37566a4e8fb4db126085bbb5e622e96d213"
     else
-      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.21/sloppyparty-macos-amd64"
-      sha256 "807661df11b5c99bbc63947e9959297e5889fc1861e723acebe923dad1c79ec8"
+      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.22/sloppyparty-macos-amd64"
+      sha256 "6b4dcab1e6ea1116a7cf065f9008d46db6ad84823823e277bf9c902e6303a5cd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.21/sloppyparty-linux-arm64"
-      sha256 "a7d8e84a8f4b0f72643fafecf4ebe662760ffac5f85905ce309044fa9b86219c"
+      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.22/sloppyparty-linux-arm64"
+      sha256 "07eb8bc750033c817f18744ae25967bc9d85829c6fcef0d256d4c724ac87fca6"
     else
-      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.21/sloppyparty-linux-amd64"
-      sha256 "deb1b7e01e001124123ebe6fa46273b7072eff1a05add686a4ca08d9483f3e8b"
+      url "https://github.com/ptweezy/sloppyparty/releases/download/sloppyparty-v1.0.22/sloppyparty-linux-amd64"
+      sha256 "dc3651ceff48521042df4ad93187ff418f1193bd9917ba242227b715423eec7f"
     end
   end
 
