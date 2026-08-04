@@ -1,7 +1,7 @@
 class Cronstable < Formula
   desc "Modern, distributed, container-friendly cron replacement"
   homepage "https://github.com/ptweezy/cronstable"
-  version "1.2.35"
+  version "1.2.36"
   license "MIT"
 
   # Serve the signed + notarized (macOS) self-contained release binaries, so
@@ -10,21 +10,21 @@ class Cronstable < Formula
   # edit the template there, not this copy.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.35/cronstable-macos-arm64"
-      sha256 "e9f26d2e427f69d33a4215c0f48e11f338cef4ab239a1831864c71a7f4d82aaa"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.36/cronstable-macos-arm64"
+      sha256 "ae4690660a60d1b5dffeff1c1245abe3bb5dccc3a263b1cee35a353278a944c8"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.35/cronstable-macos-amd64"
-      sha256 "e1f5cf9f1e138aa29ea5c1bef6ff6cb624dbb19b8870a72c9449d58faba76216"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.36/cronstable-macos-amd64"
+      sha256 "21a6c39ec101bc0dbf116e5fc1951af28c6cedae2665a839a2668f0a2b5dabae"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.35/cronstable-linux-arm64"
-      sha256 "5cc432bbe90ffef02bc63b0de1242c13c8da4be1f9f216edb4ba8fb7277d3572"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.36/cronstable-linux-arm64"
+      sha256 "6ac4ff64d67af609e1acf7c70d1e9e09e39be6927276d6184809fe18536d7fe7"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.35/cronstable-linux-amd64"
-      sha256 "e47b5bbb13f0fa5c03726c582c7b330f8328fe9df968d56d199e61442d388a01"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.36/cronstable-linux-amd64"
+      sha256 "f52fb81d4abad68cfba16e33f43b9091b862f4f33b6f63b176252ce25745ad1d"
     end
   end
 
