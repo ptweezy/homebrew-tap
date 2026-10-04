@@ -1,7 +1,7 @@
 class Cronstable < Formula
-  desc "Modern cron with retries, alerts, run history, and dashboards"
+  desc "Job scheduler with retries, alerts, run history, and dashboards"
   homepage "https://github.com/ptweezy/cronstable"
-  version "1.2.61"
+  version "1.2.62"
   license "MIT"
 
   # Serve the signed + notarized (macOS) self-contained release binaries, so
@@ -10,21 +10,21 @@ class Cronstable < Formula
   # edit the template there, not this copy.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.61/cronstable-macos-arm64"
-      sha256 "a1dd9bd8817f8e7068f8dd07a7a8c8e9309ee9a57f0f1a2fdd00031ba88250ef"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.62/cronstable-macos-arm64"
+      sha256 "54d31d83694baaf2fd4e7e93896ed290500e78f8446d93e4d28bf470baf5c517"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.61/cronstable-macos-amd64"
-      sha256 "4a12acb524ff31531b0004fdac4f198aeb124c12659dcc14323045d6a6dbc935"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.62/cronstable-macos-amd64"
+      sha256 "3637bbde4e8b5d97e17cd18f0e783b59caa5807e5e72948ca6d8f71341223a2d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.61/cronstable-linux-arm64"
-      sha256 "248f9aff4ddd6fdd01646b467e5c5b43f0458a44331e80a35d9390908f23726f"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.62/cronstable-linux-arm64"
+      sha256 "cae8944fa3c687b7398341020bd39b9a1e44c742bb6209e76ff81bb4a708bf5d"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.61/cronstable-linux-amd64"
-      sha256 "b80da4f8fa461211cbc7986de5176ec6bf6161cbb3dababf9a2fce4e95074ffa"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.62/cronstable-linux-amd64"
+      sha256 "6f65f5cb61d5d9fbec9074e96627142e717a011584d16a5527a0653fbe9c779b"
     end
   end
 
