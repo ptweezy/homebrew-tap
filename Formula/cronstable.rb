@@ -1,7 +1,7 @@
 class Cronstable < Formula
   desc "Job scheduler with retries, alerts, run history, and dashboards"
   homepage "https://github.com/ptweezy/cronstable"
-  version "1.2.63"
+  version "1.2.64"
   license "MIT"
 
   # Serve the signed + notarized (macOS) self-contained release binaries, so
@@ -10,21 +10,21 @@ class Cronstable < Formula
   # edit the template there, not this copy.
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.63/cronstable-macos-arm64"
-      sha256 "ad41dd8626a3297984624fd9a09f98815656a71e8526bd07be7cbb9bec945c0f"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.64/cronstable-macos-arm64"
+      sha256 "7856046cadc3f2de29d42ea9e176b74ca3495329ac0c0be3263c67778117e47c"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.63/cronstable-macos-amd64"
-      sha256 "3403be309bf176784da62e1bbf0f089b3e17864f8398637ecf2010af19cab610"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.64/cronstable-macos-amd64"
+      sha256 "a6944592519f54fe4d4401187046d06f7f09f1b7fdd0df551947e369cd76c2b6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.63/cronstable-linux-arm64"
-      sha256 "d3e4eea59f8ae3f06d58e22cd84b61a29aaee769344511b8b9b2d749260cb788"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.64/cronstable-linux-arm64"
+      sha256 "84bf0e8fa5de72838f44f38008801971a3c5d70d4dd8bd3d8ad34c7f464081f3"
     else
-      url "https://github.com/ptweezy/cronstable/releases/download/1.2.63/cronstable-linux-amd64"
-      sha256 "061da4451dc0d5cf6ccd6d3c9deebdea1d197f28c1fdd4751c05845a20faea01"
+      url "https://github.com/ptweezy/cronstable/releases/download/1.2.64/cronstable-linux-amd64"
+      sha256 "21dcf9a85ec3353a17da6ba87f682d4123e5567de822bbdffa0cf992522693c3"
     end
   end
 
