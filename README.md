@@ -9,12 +9,18 @@ distributed, container-friendly cron replacement.
 brew install ptweezy/tap/cronstable
 ```
 
-That one command taps this repository and installs cronstable. Equivalently:
+This command taps this repository, trusts the `cronstable` formula, and installs
+it. Homebrew loads formulae from a third-party tap only after you trust them, so
+installing by the short name takes one more step:
 
 ```sh
 brew tap ptweezy/tap
+brew trust --formula ptweezy/tap/cronstable
 brew install cronstable
 ```
+
+For more information, see [Tap Trust](https://docs.brew.sh/Tap-Trust) in the
+Homebrew documentation.
 
 Upgrade with `brew upgrade cronstable`.
 
